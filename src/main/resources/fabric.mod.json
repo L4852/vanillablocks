@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.vanillablocks.VanillaBlocks"
+			"com.github.l4852.vanillablocks.VanillaBlocks"
 		],
 		"client": [
-			"com.vanillablocks.VanillaBlocksClient"
+			"com.github.l4852.vanillablocks.VanillaBlocksClient"
 		],
 		"fabric-datagen": [
-			"com.vanillablocks.VanillaBlocksDataGenerator"
+			"com.github.l4852.vanillablocks.VanillaBlocksDataGenerator"
 		]
 	},
 	"mixins": [

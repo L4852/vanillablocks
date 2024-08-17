@@ -1,4 +1,4 @@
-package com.vanillablocks.mixin;
+package com.github.l4852.vanillablocks.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

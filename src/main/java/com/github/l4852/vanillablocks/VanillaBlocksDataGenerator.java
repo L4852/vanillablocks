@@ -1,4 +1,4 @@
-package com.vanillablocks;
+package com.github.l4852.vanillablocks;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

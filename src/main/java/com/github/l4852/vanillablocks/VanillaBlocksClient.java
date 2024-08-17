@@ -1,4 +1,4 @@
-package com.vanillablocks;
+package com.github.l4852.vanillablocks;
 
 import net.fabricmc.api.ClientModInitializer;
 
