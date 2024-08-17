@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanillablocks",
+	"version": "${version}",
+	"name": "VanillaBlocks",
+	"description": "A mod aimed at adding random blocks which seem like they should be in the vanilla game.",
+	"authors": [
+		"L4852"
+	],
+	"contact": {
+		"homepage": "https://github.com/l4852",
+		"sources": "https://github.com/l4582/vanillablocks"
+	},
+	"license": "MIT",
+	"icon": "assets/vanillablocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vanillablocks.VanillaBlocks"
+		],
+		"client": [
+			"com.vanillablocks.VanillaBlocksClient"
+		],
+		"fabric-datagen": [
+			"com.vanillablocks.VanillaBlocksDataGenerator"
+		]
+	},
+	"mixins": [
+		"vanillablocks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
