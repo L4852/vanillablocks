@@ -41,7 +41,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.STONE)
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLUSH_STONE_WALL)));
-
+        // ======================
+        // POLISHED MARBLE BLOCKS
+        // ======================
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLUSH_POLISHED_MARBLE_WALL, 6)
                 .pattern(" # ")
                 .pattern(" # ")
@@ -72,7 +74,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModBlocks.POLISHED_MARBLE_BLOCK.asItem())
                 .criterion(hasItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()), conditionsFromItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_MARBLE_TRAPDOOR)));
-
+        // ======================
+        // REDSTONE TOOLS
+        // ======================
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.REDSTONE_PICKAXE, 1)
                 .pattern("RRR")
                 .pattern(" # ")
@@ -117,5 +121,52 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', Items.REDSTONE)
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.REDSTONE_HOE)));
+        // ======================
+        // EMERALD TOOLS
+        // ======================
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMERALD_PICKAXE, 1)
+                .pattern("RRR")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('#', Items.STICK)
+                .input('R', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMERALD_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMERALD_AXE, 1)
+                .pattern(" RR")
+                .pattern(" #R")
+                .pattern(" # ")
+                .input('#', Items.STICK)
+                .input('R', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMERALD_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMERALD_SHOVEL, 1)
+                .pattern(" R ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('#', Items.STICK)
+                .input('R', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMERALD_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.EMERALD_SWORD, 1)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" # ")
+                .input('#', Items.STICK)
+                .input('R', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMERALD_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMERALD_HOE, 1)
+                .pattern(" RR")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('#', Items.STICK)
+                .input('R', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMERALD_HOE)));
     }
 }

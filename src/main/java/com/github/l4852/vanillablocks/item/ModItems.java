@@ -17,11 +17,17 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item REDSTONE_PICKAXE = registerItem("redstone_pickaxe", new PickaxeItem(ModToolMaterial.REDSTONE, 6, 4.0f, new FabricItemSettings()));
+    public static final Item REDSTONE_PICKAXE = registerItem("redstone_pickaxe", new PickaxeItem(ModToolMaterial.REDSTONE, 4, 4.0f, new FabricItemSettings()));
     public static final Item REDSTONE_AXE = registerItem("redstone_axe", new AxeItem(ModToolMaterial.REDSTONE, 10, 2.0f, new FabricItemSettings()));
-    public static final Item REDSTONE_SWORD = registerItem("redstone_sword", new SwordItem(ModToolMaterial.REDSTONE, 15, 5.0f, new FabricItemSettings()));
+    public static final Item REDSTONE_SWORD = registerItem("redstone_sword", new SwordItem(ModToolMaterial.REDSTONE, 7, 5.0f, new FabricItemSettings()));
     public static final Item REDSTONE_SHOVEL = registerItem("redstone_shovel", new ShovelItem(ModToolMaterial.REDSTONE, 1, 8.0f, new FabricItemSettings()));
-    public static final Item REDSTONE_HOE = registerItem("redstone_hoe", new HoeItem(ModToolMaterial.REDSTONE, 4, 7.0f, new FabricItemSettings()));
+    public static final Item REDSTONE_HOE = registerItem("redstone_hoe", new HoeItem(ModToolMaterial.REDSTONE, 2, 7.0f, new FabricItemSettings()));
+
+    public static final Item EMERALD_PICKAXE = registerItem("emerald_pickaxe", new PickaxeItem(ModToolMaterial.EMERALD, 5, 4.0f, new FabricItemSettings()));
+    public static final Item EMERALD_AXE = registerItem("emerald_axe", new AxeItem(ModToolMaterial.EMERALD, 15, 2.0f, new FabricItemSettings()));
+    public static final Item EMERALD_SWORD = registerItem("emerald_sword", new SwordItem(ModToolMaterial.EMERALD, 10, 5.0f, new FabricItemSettings()));
+    public static final Item EMERALD_SHOVEL = registerItem("emerald_shovel", new ShovelItem(ModToolMaterial.EMERALD, 3, 8.0f, new FabricItemSettings()));
+    public static final Item EMERALD_HOE = registerItem("emerald_hoe", new HoeItem(ModToolMaterial.EMERALD, 4, 7.0f, new FabricItemSettings()));
     private static final Item[] gameItems = {};
     public static final Block[] gameBlocks = {
             ModBlocks.MARBLE_BLOCK,
@@ -53,10 +59,15 @@ public class ModItems {
             REDSTONE_PICKAXE,
             REDSTONE_AXE,
             REDSTONE_HOE,
-            REDSTONE_SHOVEL
+            REDSTONE_SHOVEL,
+            EMERALD_PICKAXE,
+            EMERALD_AXE,
+            EMERALD_HOE,
+            EMERALD_SHOVEL
     };
     private static final Item[] combatItems = {
-            REDSTONE_SWORD
+            REDSTONE_SWORD,
+            EMERALD_SWORD
     };
 
 

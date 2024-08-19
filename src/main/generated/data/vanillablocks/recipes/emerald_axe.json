@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "pattern": [
+    " RR",
+    " #R",
+    " # "
+  ],
+  "result": {
+    "item": "vanillablocks:emerald_axe"
+  },
+  "show_notification": true
+}

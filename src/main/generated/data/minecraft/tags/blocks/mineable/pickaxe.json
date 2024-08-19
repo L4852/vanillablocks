@@ -10,6 +10,8 @@
     "vanillablocks:polished_marble_door",
     "vanillablocks:polished_marble_trapdoor",
     "vanillablocks:polished_marble_button",
-    "vanillablocks:polished_marble_slab"
+    "vanillablocks:polished_marble_slab",
+    "vanillablocks:flush_polished_marble_wall",
+    "vanillablocks:flush_stone_wall"
   ]
 }

@@ -8,8 +8,9 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    REDSTONE(MiningLevels.NETHERITE, 4096, 10.0f, 10.0f, 30, () -> Ingredient.ofItems(Items.REDSTONE));
-
+    REDSTONE(MiningLevels.DIAMOND, 2048, 7.0f, 1.0f, 25, () -> Ingredient.ofItems(Items.REDSTONE)),
+    EMERALD(MiningLevels.DIAMOND, 256, 10.0f, 1.0f, 30, () -> Ingredient.ofItems(Items.EMERALD))
+    ;
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;

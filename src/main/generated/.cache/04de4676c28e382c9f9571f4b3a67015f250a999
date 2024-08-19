@@ -1,6 +1,6 @@
-// 1.20.1	2024-08-19T00:07:22.98626	VanillaBlocks/Block Loot Tables
-21bed5acbbf995c2ce2ea69f1e5aa7a6b3bbde28 data/vanillablocks/loot_tables/blocks/flush_polished_marble_wall.json
+// 1.20.1	2024-08-19T12:12:04.832107	VanillaBlocks/Block Loot Tables
 09fdbf5cd65a4e6774773764fb50c47f91daec7d data/vanillablocks/loot_tables/blocks/polished_marble_block.json
+21bed5acbbf995c2ce2ea69f1e5aa7a6b3bbde28 data/vanillablocks/loot_tables/blocks/flush_polished_marble_wall.json
 aa333d1579118c10d4a6c27f1b683b2ff30eff97 data/vanillablocks/loot_tables/blocks/polished_marble_button.json
 602c7e9b05214ff255f5d6759f6de22004bfecab data/vanillablocks/loot_tables/blocks/marble_slab.json
 12b55bde472ec5bdbe0892c4f45049eb192d64a8 data/vanillablocks/loot_tables/blocks/marble_block.json

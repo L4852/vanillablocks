@@ -45,7 +45,12 @@ public class ModModelProvider extends FabricModelProvider {
             ModItems.REDSTONE_SHOVEL,
             ModItems.REDSTONE_AXE,
             ModItems.REDSTONE_PICKAXE,
-            ModItems.REDSTONE_HOE
+            ModItems.REDSTONE_HOE,
+            ModItems.EMERALD_SWORD,
+            ModItems.EMERALD_SHOVEL,
+            ModItems.EMERALD_AXE,
+            ModItems.EMERALD_PICKAXE,
+            ModItems.EMERALD_HOE
     };
 
     @Override
