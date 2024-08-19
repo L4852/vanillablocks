@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "pattern": [
+    " RR",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "vanillablocks:emerald_hoe"
+  },
+  "show_notification": true
+}

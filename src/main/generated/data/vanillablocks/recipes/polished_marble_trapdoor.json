@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "vanillablocks:polished_marble_block"
+    }
+  },
+  "pattern": [
+    "   ",
+    " ##",
+    " ##"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vanillablocks:polished_marble_trapdoor"
+  },
+  "show_notification": true
+}

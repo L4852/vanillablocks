@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "vanillablocks:block/polished_marble_pressure_plate"
+    },
+    "powered=true": {
+      "model": "vanillablocks:block/polished_marble_pressure_plate_down"
+    }
+  }
+}

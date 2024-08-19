@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "RRR",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "vanillablocks:redstone_pickaxe"
+  },
+  "show_notification": true
+}

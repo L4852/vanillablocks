@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "vanillablocks:block/polished_marble_door_bottom",
+    "top": "vanillablocks:block/polished_marble_door_top"
+  }
+}

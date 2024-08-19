@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "C": {
+      "item": "minecraft:calcite"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "CIC",
+    "I#I",
+    "CIC"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vanillablocks:marble_block"
+  },
+  "show_notification": true
+}

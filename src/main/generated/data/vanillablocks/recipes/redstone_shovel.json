@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " R ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "vanillablocks:redstone_shovel"
+  },
+  "show_notification": true
+}

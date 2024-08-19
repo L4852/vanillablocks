@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vanillablocks:marble_block"
+  },
+  "result": "vanillablocks:polished_marble_block"
+}
