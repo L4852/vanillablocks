@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_open",
+  "textures": {
+    "texture": "vanillablocks:block/polished_marble_trapdoor"
+  }
+}

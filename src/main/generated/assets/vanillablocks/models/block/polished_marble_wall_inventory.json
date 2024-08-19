@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "vanillablocks:block/polished_marble_block"
+  }
+}

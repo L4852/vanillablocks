@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vanillablocks:marble_block",
+    "vanillablocks:marble_stairs",
+    "vanillablocks:marble_slab",
+    "vanillablocks:polished_marble_block",
+    "vanillablocks:polished_marble_stairs",
+    "vanillablocks:polished_marble_pressure_plate",
+    "vanillablocks:polished_marble_door",
+    "vanillablocks:polished_marble_trapdoor",
+    "vanillablocks:polished_marble_button",
+    "vanillablocks:polished_marble_slab"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north" : {
+      "model": "vanillablocks:block/flush_stone_wall"
+    },
+    "facing=south" : {
+      "model": "vanillablocks:block/flush_stone_wall",
+      "y": 180
+    },
+    "facing=east" : {
+      "model": "vanillablocks:block/flush_stone_wall",
+      "y": 90
+    },
+    "facing=west" : {
+      "model": "vanillablocks:block/flush_stone_wall",
+      "y": -90
+    }
+  }
+}
