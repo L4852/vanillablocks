@@ -4,6 +4,7 @@ import com.github.l4852.vanillablocks.block.ModBlocks;
 import com.github.l4852.vanillablocks.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
@@ -74,6 +75,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModBlocks.POLISHED_MARBLE_BLOCK.asItem())
                 .criterion(hasItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()), conditionsFromItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_MARBLE_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Blocks.CALCITE, 5)
+                .pattern("#G#")
+                .pattern("G#G")
+                .pattern("#G#")
+                .input('#', Items.COBBLESTONE)
+                .input('G', Items.GRAVEL)
+                .criterion(hasItem(Items.GRAVEL), conditionsFromItem(Items.GRAVEL))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.CALCITE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_TILE, 6)
+                .pattern("   ")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.POLISHED_MARBLE_BLOCK.asItem())
+                .criterion(hasItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()), conditionsFromItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_MARBLE_BLOCK.asItem())));
         // ======================
         // REDSTONE TOOLS
         // ======================
