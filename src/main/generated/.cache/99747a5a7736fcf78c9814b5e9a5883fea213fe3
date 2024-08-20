@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-19T12:12:04.83036	VanillaBlocks/Model Definitions
+// 1.20.1	2024-08-20T11:55:51.723977	VanillaBlocks/Model Definitions
 1b16b8c41e6685488d1394d1b78facb75abeec79 assets/vanillablocks/models/block/polished_marble_door_bottom_right.json
 a1865188173b6830f490f00f3bba9d53b352b6c0 assets/vanillablocks/blockstates/marble_stairs.json
 c08f34c195969e23f41397671c99d7f49bef0faf assets/vanillablocks/models/item/redstone_pickaxe.json
@@ -25,8 +25,8 @@ a6e06f77e71bb7bbbace997fb22d34dd5b8e8def assets/vanillablocks/blockstates/polish
 9cc67bc09597bef562b95e93877aa8e260d9d318 assets/vanillablocks/blockstates/polished_marble_trapdoor.json
 55569e2b3329bb16c2ce7c0a6c150ab327c894e0 assets/vanillablocks/models/item/polished_marble_wall.json
 a7491b1ad2b2bc03ace2dda02322211044fa7942 assets/vanillablocks/models/block/polished_marble_trapdoor_bottom.json
-1aec72508792e1feb1e04eff390cb5c334864a1c assets/vanillablocks/blockstates/polished_marble_block.json
 3e8dac4f302b79b40b839c5f2999952b713b88a1 assets/vanillablocks/blockstates/marble_block.json
+1aec72508792e1feb1e04eff390cb5c334864a1c assets/vanillablocks/blockstates/polished_marble_block.json
 2de2efa0ea0322926c578f6e37b66622158ec341 assets/vanillablocks/models/block/polished_marble_pressure_plate.json
 dfab44cbdecabe317eea93509469ef3d1d30637e assets/vanillablocks/models/item/polished_marble_button.json
 561862b39b5a73b0c96d50bfd1c626f17edc3bec assets/vanillablocks/models/block/polished_marble_wall_post.json

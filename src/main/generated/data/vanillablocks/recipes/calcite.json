@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "G": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "pattern": [
+    "#G#",
+    "G#G",
+    "#G#"
+  ],
+  "result": {
+    "count": 5,
+    "item": "minecraft:calcite"
+  },
+  "show_notification": true
+}
