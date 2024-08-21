@@ -30,7 +30,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_MARBLE_BUTTON)
                 .add(ModBlocks.POLISHED_MARBLE_SLAB)
                 .add(ModBlocks.FLUSH_POLISHED_MARBLE_WALL)
-                .add(ModBlocks.FLUSH_STONE_WALL);
+                .add(ModBlocks.FLUSH_STONE_WALL)
+                .add(ModBlocks.POLISHED_MARBLE_BEAM);
         getOrCreateTagBuilder(BlockTags.DOORS).add(ModBlocks.POLISHED_MARBLE_DOOR);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.POLISHED_MARBLE_WALL);
