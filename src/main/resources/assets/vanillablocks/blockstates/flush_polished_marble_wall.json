@@ -14,6 +14,12 @@
     "facing=west" : {
       "model": "vanillablocks:block/flush_polished_marble_wall",
       "y": -90
+    },
+    "facing=down": {
+      "model": "vanillablocks:block/flush_polished_marble_wall"
+    },
+    "facing=up": {
+      "model": "vanillablocks:block/flush_polished_marble_wall"
     }
   }
 }

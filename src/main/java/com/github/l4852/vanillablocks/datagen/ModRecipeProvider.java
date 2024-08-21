@@ -25,7 +25,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
 //        offerSmelting(exporter, SMELTABLES, RecipeCategory.BUILDING_BLOCKS, ModItems.ITEM_NAME);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_BLOCK, 4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_BLOCK, 9)
                 .pattern("CIC")
                 .pattern("I#I")
                 .pattern("CIC")
@@ -58,6 +58,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_STAIRS, ModBlocks.POLISHED_MARBLE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_SLAB, ModBlocks.POLISHED_MARBLE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_WALL, ModBlocks.POLISHED_MARBLE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_TILE, ModBlocks.POLISHED_MARBLE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_BEAM, ModBlocks.POLISHED_MARBLE_BLOCK);
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_SLAB, ModBlocks.POLISHED_MARBLE_BLOCK);
         offerPressurePlateRecipe(exporter, ModBlocks.POLISHED_MARBLE_PRESSURE_PLATE, ModBlocks.POLISHED_MARBLE_BLOCK);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_WALL, ModBlocks.POLISHED_MARBLE_BLOCK);
@@ -76,7 +78,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()), conditionsFromItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_MARBLE_TRAPDOOR)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Blocks.CALCITE, 5)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Blocks.CALCITE, 9)
                 .pattern("#G#")
                 .pattern("G#G")
                 .pattern("#G#")
@@ -84,13 +86,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('G', Items.GRAVEL)
                 .criterion(hasItem(Items.GRAVEL), conditionsFromItem(Items.GRAVEL))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.CALCITE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_TILE, 6)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_TILE, 24)
                 .pattern("   ")
                 .pattern("###")
                 .pattern("###")
                 .input('#', ModBlocks.POLISHED_MARBLE_BLOCK.asItem())
                 .criterion(hasItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()), conditionsFromItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_MARBLE_BLOCK.asItem())));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_MARBLE_BEAM, 8)
+                .pattern("   ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('#', ModBlocks.POLISHED_MARBLE_BLOCK.asItem())
+                .criterion(hasItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()), conditionsFromItem(ModBlocks.POLISHED_MARBLE_BLOCK.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_MARBLE_BEAM.asItem())));
         // ======================
         // REDSTONE TOOLS
         // ======================
