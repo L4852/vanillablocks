@@ -8,12 +8,12 @@
   },
   "pattern": [
     "   ",
-    "###",
-    "###"
+    " # ",
+    " # "
   ],
   "result": {
-    "count": 24,
-    "item": "vanillablocks:polished_marble_tile"
+    "count": 8,
+    "item": "vanillablocks:polished_marble_beam"
   },
   "show_notification": true
 }

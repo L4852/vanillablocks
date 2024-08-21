@@ -1,6 +1,7 @@
 package com.github.l4852.vanillablocks.block;
 
 import com.github.l4852.vanillablocks.VanillaBlocks;
+import com.github.l4852.vanillablocks.block.custom.BeamBlock;
 import com.github.l4852.vanillablocks.block.custom.FlushWallBlock;
 import com.github.l4852.vanillablocks.block.custom.TileBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -29,6 +30,9 @@ public class ModBlocks {
     public static final Block POLISHED_MARBLE_DOOR = registerBlock("polished_marble_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR).nonOpaque(), BlockSetType.STONE));
     public static final Block POLISHED_MARBLE_TRAPDOOR = registerBlock("polished_marble_trapdoor", new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR).nonOpaque(), BlockSetType.STONE));
     public static final TileBlock POLISHED_MARBLE_TILE = registerTileBlock("polished_marble_tile", new TileBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_MARBLE_SLAB)));
+    public static final BeamBlock POLISHED_MARBLE_BEAM = registerBeamBlock("polished_marble_beam", new BeamBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_MARBLE_WALL)));
+
+
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(VanillaBlocks.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
     }
@@ -36,7 +40,12 @@ public class ModBlocks {
     private static Item registerFlushWallItem(String name, FlushWallBlock block) {
         return Registry.register(Registries.ITEM, new Identifier(VanillaBlocks.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
     }
-private static Item registerTileBlockItem(String name, TileBlock block) {
+
+    private static Item registerTileBlockItem(String name, TileBlock block) {
+        return Registry.register(Registries.ITEM, new Identifier(VanillaBlocks.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
+    }
+
+    private static Item registerBeamBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(VanillaBlocks.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
     }
 
@@ -49,8 +58,14 @@ private static Item registerTileBlockItem(String name, TileBlock block) {
         registerFlushWallItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(VanillaBlocks.MOD_ID, name), block);
     }
-private static TileBlock registerTileBlock(String name, TileBlock block) {
+
+    private static TileBlock registerTileBlock(String name, TileBlock block) {
         registerTileBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(VanillaBlocks.MOD_ID, name), block);
+    }
+
+    private static BeamBlock registerBeamBlock(String name, BeamBlock block) {
+        registerBeamBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(VanillaBlocks.MOD_ID, name), block);
     }
 

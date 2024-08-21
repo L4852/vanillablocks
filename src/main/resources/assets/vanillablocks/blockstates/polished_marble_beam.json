@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vanillablocks:block/polished_marble_beam",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "vanillablocks:block/polished_marble_beam",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "vanillablocks:block/polished_marble_beam",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vanillablocks:block/polished_marble_beam",
+      "y": -90
+    },
+    "facing=down": {
+      "model": "vanillablocks:block/flush_polished_marble_wall"
+    },
+    "facing=up": {
+      "model": "vanillablocks:block/flush_polished_marble_wall"
+    }
+  }
+}

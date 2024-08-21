@@ -2,6 +2,7 @@ package com.github.l4852.vanillablocks.item;
 
 import com.github.l4852.vanillablocks.VanillaBlocks;
 import com.github.l4852.vanillablocks.block.ModBlocks;
+import com.github.l4852.vanillablocks.block.custom.BeamBlock;
 import com.github.l4852.vanillablocks.block.custom.FlushWallBlock;
 import com.github.l4852.vanillablocks.block.custom.TileBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -54,6 +55,9 @@ public class ModItems {
     private static final TileBlock[] tileBlocks = {
             ModBlocks.POLISHED_MARBLE_TILE
     };
+    private static final BeamBlock[] beamBlocks = {
+            ModBlocks.POLISHED_MARBLE_BEAM
+    };
 
     private static final Item[] toolItems = {
             REDSTONE_PICKAXE,
@@ -82,6 +86,9 @@ public class ModItems {
             entries.add(block.asItem());
         }
         for (TileBlock block : tileBlocks) {
+            entries.add(block.asItem());
+        }
+        for (BeamBlock block : beamBlocks) {
             entries.add(block.asItem());
         }
     }

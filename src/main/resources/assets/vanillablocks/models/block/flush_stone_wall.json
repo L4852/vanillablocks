@@ -1,6 +1,6 @@
 
 {
-	"parent": "block/slab",
+	"parent": "block/cube",
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "vanillablocks:block/flush_stone_wall",

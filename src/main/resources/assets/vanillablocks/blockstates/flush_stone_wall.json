@@ -14,6 +14,12 @@
     "facing=west" : {
       "model": "vanillablocks:block/flush_stone_wall",
       "y": -90
+    },
+    "facing=down": {
+      "model": "vanillablocks:block/flush_stone_wall"
+    },
+    "facing=up": {
+      "model": "vanillablocks:block/flush_stone_wall"
     }
   }
 }
