@@ -12,6 +12,7 @@
     "vanillablocks:polished_marble_button",
     "vanillablocks:polished_marble_slab",
     "vanillablocks:flush_polished_marble_wall",
-    "vanillablocks:flush_stone_wall"
+    "vanillablocks:flush_stone_wall",
+    "vanillablocks:polished_marble_beam"
   ]
 }

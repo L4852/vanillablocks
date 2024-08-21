@@ -43,6 +43,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         }
         addDrop(ModBlocks.FLUSH_STONE_WALL);
         addDrop(ModBlocks.FLUSH_POLISHED_MARBLE_WALL);
+        addDrop(ModBlocks.POLISHED_MARBLE_BEAM);
 //        addDrop(ModBlocks.MARBLE_BLOCK, oreDrops(ModBlocks.MARBLE_BLOCK (silk touch drop), ModItems.MARBLE_BLOCK (main drop));
     }
 }
