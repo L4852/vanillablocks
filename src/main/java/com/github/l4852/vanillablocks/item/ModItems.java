@@ -29,6 +29,8 @@ public class ModItems {
     public static final Item EMERALD_SWORD = registerItem("emerald_sword", new SwordItem(ModToolMaterial.EMERALD, 5, -2.5f, new FabricItemSettings()));
     public static final Item EMERALD_SHOVEL = registerItem("emerald_shovel", new ShovelItem(ModToolMaterial.EMERALD, 3, -3.0f, new FabricItemSettings()));
     public static final Item EMERALD_HOE = registerItem("emerald_hoe", new HoeItem(ModToolMaterial.EMERALD, 4, -3.0f, new FabricItemSettings()));
+    public static final Item SILICA = registerItem("silica", new Item(new FabricItemSettings()));
+    public static final Item COPPER_DUST = registerItem("copper_dust", new Item(new FabricItemSettings()));
     private static final Item[] gameItems = {};
     public static final Block[] gameBlocks = {
             ModBlocks.MARBLE_BLOCK,
@@ -43,23 +45,29 @@ public class ModItems {
             ModBlocks.POLISHED_MARBLE_PRESSURE_PLATE,
             ModBlocks.POLISHED_MARBLE_SLAB
     };
-    private static final Block[] redstoneItems = {
+    private static final Block[] REDSTONE_BLOCKS = {
             ModBlocks.POLISHED_MARBLE_BUTTON,
             ModBlocks.POLISHED_MARBLE_PRESSURE_PLATE
     };
+    private static final Item[] REDSTONE_ITEMS = {
+            ModItems.SILICA,
+            ModItems.COPPER_DUST
+    };
+    private static final Item[] INGREDIENT_ITEMS = {
+    };
 
-    private static final FlushWallBlock[] flushBlocks = {
+    private static final FlushWallBlock[] FLUSH_BLOCKS = {
             ModBlocks.FLUSH_STONE_WALL,
             ModBlocks.FLUSH_POLISHED_MARBLE_WALL
     };
-    private static final TileBlock[] tileBlocks = {
+    private static final TileBlock[] TILE_BLOCKS = {
             ModBlocks.POLISHED_MARBLE_TILE
     };
-    private static final BeamBlock[] beamBlocks = {
+    private static final BeamBlock[] BEAM_BLOCKS = {
             ModBlocks.POLISHED_MARBLE_BEAM
     };
 
-    private static final Item[] toolItems = {
+    private static final Item[] TOOL_ITEMS = {
             REDSTONE_PICKAXE,
             REDSTONE_AXE,
             REDSTONE_HOE,
@@ -69,7 +77,7 @@ public class ModItems {
             EMERALD_HOE,
             EMERALD_SHOVEL
     };
-    private static final Item[] combatItems = {
+    private static final Item[] COMBAT_ITEMS = {
             REDSTONE_SWORD,
             EMERALD_SWORD
     };
@@ -82,31 +90,40 @@ public class ModItems {
         for (Block block : gameBlocks) {
             entries.add(block);
         }
-        for (FlushWallBlock block : flushBlocks) {
+        for (FlushWallBlock block : FLUSH_BLOCKS) {
             entries.add(block.asItem());
         }
-        for (TileBlock block : tileBlocks) {
+        for (TileBlock block : TILE_BLOCKS) {
             entries.add(block.asItem());
         }
-        for (BeamBlock block : beamBlocks) {
+        for (BeamBlock block : BEAM_BLOCKS) {
             entries.add(block.asItem());
         }
     }
 
     private static void addItemsToCombatGroup(FabricItemGroupEntries entries) {
-        for (Item item : combatItems) {
+        for (Item item : COMBAT_ITEMS) {
             entries.add(item);
         }
     }
 
     private static void addItemsToRedstoneGroup(FabricItemGroupEntries entries) {
-        for (Block block : redstoneItems) {
+        for (Block block : REDSTONE_BLOCKS) {
             entries.add(block);
+        }
+        for (Item item : REDSTONE_ITEMS) {
+            entries.add(item);
         }
     }
 
     private static void addItemsToToolGroup(FabricItemGroupEntries entries) {
-        for (Item item : toolItems) {
+        for (Item item : TOOL_ITEMS) {
+            entries.add(item);
+        }
+    }
+
+    private static void addItemsToIngredientGroup(FabricItemGroupEntries entries) {
+        for (Item item : INGREDIENT_ITEMS) {
             entries.add(item);
         }
     }
@@ -122,5 +139,6 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModItems::addItemsToRedstoneGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientGroup);
     }
 }

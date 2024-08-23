@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "   ",
+    " S ",
+    " P "
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:sticky_piston"
+  },
+  "show_notification": true
+}

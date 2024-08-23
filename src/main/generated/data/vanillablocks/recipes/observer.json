@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "vanillablocks:copper_dust"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "   ",
+    " C#",
+    " CC"
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:observer"
+  },
+  "show_notification": true
+}

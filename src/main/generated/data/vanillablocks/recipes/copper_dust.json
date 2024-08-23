@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    " C ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "vanillablocks:copper_dust"
+  },
+  "show_notification": true
+}

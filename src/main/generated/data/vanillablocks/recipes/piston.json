@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "P": [
+      {
+        "item": "minecraft:oak_planks"
+      },
+      {
+        "item": "minecraft:birch_planks"
+      },
+      {
+        "item": "minecraft:acacia_planks"
+      },
+      {
+        "item": "minecraft:jungle_planks"
+      },
+      {
+        "item": "minecraft:dark_oak_planks"
+      },
+      {
+        "item": "minecraft:bamboo_planks"
+      },
+      {
+        "item": "minecraft:cherry_planks"
+      },
+      {
+        "item": "minecraft:spruce_planks"
+      }
+    ],
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " P ",
+    " S ",
+    " C "
+  ],
+  "result": {
+    "count": 8,
+    "item": "minecraft:piston"
+  },
+  "show_notification": true
+}

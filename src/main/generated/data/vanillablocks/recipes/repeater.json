@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "   ",
+    "R R",
+    "CCC"
+  ],
+  "result": {
+    "count": 16,
+    "item": "minecraft:repeater"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "vanillablocks:copper_dust"
+    },
+    "S": {
+      "item": "vanillablocks:silica"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SCS",
+    " S "
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:redstone"
+  },
+  "show_notification": true
+}
