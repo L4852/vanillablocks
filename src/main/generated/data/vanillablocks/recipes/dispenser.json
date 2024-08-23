@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CR ",
+    "CCC"
+  ],
+  "result": {
+    "count": 8,
+    "item": "minecraft:dispenser"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "C  ",
+    "CCC"
+  ],
+  "result": {
+    "count": 8,
+    "item": "minecraft:dropper"
+  },
+  "show_notification": true
+}

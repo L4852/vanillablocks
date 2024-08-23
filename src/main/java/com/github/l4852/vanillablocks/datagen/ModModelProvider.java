@@ -18,6 +18,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     private static final Block[] CUBE_BLOCKS = {};
 
+    private static final Item[] ITEM_LIST = {ModItems.SILICA, ModItems.COPPER_DUST};
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool polished_marble_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_MARBLE_BLOCK);
@@ -57,6 +59,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         for (Item item : toolListItems) {
             itemModelGenerator.register(item, Models.HANDHELD);
+        }
+        for (Item item : ITEM_LIST) {
+            itemModelGenerator.register(item, Models.GENERATED);
         }
     }
 }
